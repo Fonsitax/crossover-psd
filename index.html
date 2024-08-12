@@ -194,44 +194,46 @@
     </section>
 
     <section class="bg-[#051DA5]">
-        <div class="container mx-auto flex items-center justify-center h-[225px]">
-            <p class="text-white text-sm font-family: 'Helvetica Neue', 'Arimo', Helvetica, Arial, sans-serif; font-size: 22px; font-weight: 400;">
+        <div class="container mx-auto flex items-center justify-center h-[225px]" style="font-family: 'Helvetica Neue', Arial, sans-serif;">
+            <p class="text-white text-sm">
                 FOLLOW <a href="#" class="cursor-pointer">@MRAEWEB</a> FOR UPDATES
             </p>
         </div>
     </section>
 
-    <footer class="bg-white font-family: 'Helvetica Neue', 'Arimo', Helvetica, Arial, sans-serif;">
+    <footer class="bg-white" style="font-family: 'Helvetica Neue', Arial, sans-serif;">
         <div class="container mx-auto flex justify-between items-center h-[346px]">
             <div class="ml-[70px] mt-4 w-[780px]">
                 <img class="h-[16px] mb-[40px] cursor-pointer" src="http://launchkit.mediumra.re/img/logo-dark.png" alt="logo">
-                <form class="mt-12">
-                    <input type="email" placeholder="Newsletter Signup" class="py-4 px-4 border text-[16px] border-gray-200 rounded-l-sm focus:outline-none">
+                <div class="mt-12 flex">
+                    <input class="py-4 px-4 font-light border text-[16px] border-gray-200 rounded-l-sm focus:outline-0" type="email" placeholder="Newsletter Signup">
                     <button class="bg-[#051DA5] hover:bg-[#041A8D] text-[16px] text-white py-4 px-8 rounded-r-sm">Go</button>
-                </form>
-                <div class="text-[#888888] text-[12px] mt-16">
+                </div>
+                <div class="text-[#888888] text-[12px] mt-12 font-light">
                     &copy; Copyright 2015 Medium Rare - All Rights Reserved
                 </div>
             </div>
 
-            <div class="mb-20">
-                <h3 class="text-[rgb(34,34,34)] text-[14px] font-semibold">MORE INFO</h3>
-                <ul class="text-[#888888]">
-                    <li><a href="#" class="hover:text-gray-700">About</a></li>
-                    <li><a href="#" class="hover:text-gray-700">News</a></li>
-                    <li><a href="#" class="hover:text-gray-700">FAQ</a></li>
-                    <li><a href="#" class="hover:text-gray-700">Privacy Policy</a></li>
-                    <li><a href="#" class="hover:text-gray-700">Terms of Use</a></li>
-                </ul>
-            </div>
-
-            <div class="mb-32">
-                <h3 class="text-[#222222] text-[14px] font-semibold">SOCIAL</h3>
-                <ul class="text-[#888888]">
-                    <li><a href="#" class="hover:text-gray-700">Facebook</a></li>
-                    <li><a href="#" class="hover:text-gray-700">Twitter</a></li>
-                    <li><a href="#" class="hover:text-gray-700">Instagram</a></li>
-                </ul>
+            <div class="flex space-x-16 mb-4 mr-40">
+                <div class="flex flex-col" style="font-family: 'Helvetica Neue', Arial, sans-serif;">
+                    <p class="text-[#222222] text-[14px] font-semibold mb-6 mr-12">MORE INFO</p>
+                    <ul class="text-[#888888] font-light">
+                        <li><a href="#" class="hover:text-gray-700">About</a></li>
+                        <li><a href="#" class="hover:text-gray-700">News</a></li>
+                        <li><a href="#" class="hover:text-gray-700">FAQ</a></li>
+                        <li><a href="#" class="hover:text-gray-700">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-gray-700">Terms of Use</a></li>
+                    </ul>
+                </div>
+    
+                <div class="flex flex-col" style="font-family: 'Helvetica Neue', Arial, sans-serif;">
+                    <p class="text-[#222222] text-[14px] font-semibold mb-8">SOCIAL</p>
+                    <ul class="text-[#888888] font-light">
+                        <li><a href="#" class="hover:text-gray-700">Facebook</a></li>
+                        <li><a href="#" class="hover:text-gray-700">Twitter</a></li>
+                        <li><a href="#" class="hover:text-gray-700">Instagram</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
