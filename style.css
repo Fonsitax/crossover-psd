@@ -4,3 +4,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
+.transition {
+    transition: opacity 0.3s ease;
+}
