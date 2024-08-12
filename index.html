@@ -5,14 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cross over day</title>
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
+    <style>
+        /* Add some transition effects */
+        .transition {
+            transition: opacity 0.3s ease;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const dropdownTrigger = document.getElementById('dropdownTrigger');
+            const dropdownMenu = document.getElementById('dropdownMenu');
+            const demosTrigger = document.getElementById('demosTrigger');
+            const demosMenu = document.getElementById('demosMenu');
 
-<!--  Header and Hero Dhruvi -->
-<!--  Main -- Fonni -->
-<!--  Body -- Michal -->
-<body class="bg-blue-500">
-    <p class="bg-blue-300"> test </p>
+            // Toggle main dropdown menu
+            dropdownTrigger.addEventListener('click', function (event) {
+                event.preventDefault();
+                dropdownMenu.classList.toggle('hidden');
+            });
+
+            // Toggle sub-dropdown menu
+            demosTrigger.addEventListener('click', function (event) {
+                event.preventDefault();
+                demosMenu.classList.toggle('hidden');
+            });
+
+            // Close the dropdown if clicking outside of it
+            document.addEventListener('click', function (event) {
+                if (!dropdownTrigger.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                    dropdownMenu.classList.add('hidden');
+                }
+                if (!demosTrigger.contains(event.target) && !demosMenu.contains(event.target)) {
+                    demosMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- Header and Hero Dhruvi -->
+    <header class="bg-white">
+        <!-- Navbar -->
+        <nav class="bg-black text-white py-6 fixed top-0 left-0 w-full z-50">
+            <div class="container mx-auto flex justify-between items-center">
+                <div class="text-xl font-bold ml-8">
+                    <a href="#" class="text-white">launch<span class="text-yellow-400">.nyc</span></a>
+                </div>
+                <div class="space-x-6 text-sm flex items-center">
+                    <a href="#" class="hover:text-yellow-400">Home</a>
+                    <a href="#" class="hover:text-yellow-400">About</a>
+                    <a href="#" class="hover:text-yellow-400">Work</a>
+                    <a href="#" class="hover:text-yellow-400">Testimonials</a>
+                    <a href="#" class="hover:text-yellow-400">Social</a>
+
+                    <!-- Dropdown Menu Trigger -->
+                    <div class="relative">
+                        <a href="#" id="dropdownTrigger" class="hover:text-yellow-400 cursor-pointer">Pages</a>
+                        <!-- Main Dropdown Menu -->
+                        <div id="dropdownMenu" class="absolute right-0 mt-2 bg-white text-black rounded-md shadow-lg hidden">
+                            <div class="relative">
+                                <a href="#" id="demosTrigger" class="block px-5 py-2 hover:bg-gray-200">Demos</a>
+                                <!-- Sub-dropdown Menu for Demos -->
+                                <div id="demosMenu" class="absolute left-full top-0 mt-2 bg-white text-black rounded-md shadow-lg hidden transition">
+                                    <a href="#" class="block px-5 py-2 hover:bg-gray-200">Classic</a>
+                                    <a href="#" class="block px-5 py-2 hover:bg-gray-200">Tourism</a>
+                                    <a href="#" class="block px-5 py-2 hover:bg-gray-200">Agency</a>
+                                    <a href="#" class="block px-5 py-2 hover:bg-gray-200">Fitness</a>
+                                    <a href="#" class="block px-5 py-2 hover:bg-gray-200">Catering</a>
+                                    <a href="#" class="block px-5 py-2 hover:bg-gray-200">Learning</a>
+                                </div>
+                            </div>
+                            <a href="#" class="block px-5 py-2 hover:bg-gray-200">News</a>
+                            <a href="#" class="block px-5 py-2 hover:bg-gray-200">FAQ</a>
+                            <a href="#" class="block px-5 py-2 hover:bg-gray-200">Terms</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mr-8">
+                    <a href="#" class="ml-5 bg-blue-900 text-white px-6 py-3 rounded-full hover:bg-blue-700">Build Yours »</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="relative h-screen">
+            <img src="./image/1520170349293.jfif" alt="Street View" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="absolute inset-0 flex flex-col justify-center items-center text-white">
+                <h1 class="text-6xl font-bold">launchkit.nyc</h1>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section class="py-20 mt-20">
+            <div class="container mx-auto text-center">
+                <p class="text-3xl mb-10">
+                    We deliver considered branding products that evoke <br> engaging emotional responses. Innovative thinking and<br>attention to detail are the hallmark of our craft.
+                </p>
+                <a href="#" class="mt-8 border px-9 py-3 rounded-full text-blue-700 hover:bg-blue-700 hover:text-white">Work With Us »</a>
+            </div>
+        </section>
+    </header>
+
+    <!-- Main -- Fonni -->
+    <!-- Body -- Michal -->
+    <body class="bg-blue-500">
+        <p class="bg-blue-300">test</p>
+    </body>
+
+    <!-- Footer Amar -->
+    <footer></footer>
 </body>
- <!--  Footer Amar -->
-<footer></footer>
 </html>
