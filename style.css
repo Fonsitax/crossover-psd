@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Launchkit';
+    src: url('./fonts/launchkit-fonts.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.transition {
+    transition: opacity 0.3s ease;
+}
